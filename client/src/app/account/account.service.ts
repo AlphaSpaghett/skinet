@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
-import { BehaviorSubject, of, ReplaySubject } from 'rxjs';
+import { of, ReplaySubject } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';

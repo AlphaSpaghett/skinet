@@ -12,6 +12,7 @@ export class SectionHeaderComponent implements OnInit {
 
   constructor(private bcService: BreadcrumbService) { }
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
     this.breadcrumb$ = this.bcService.breadcrumbs$;
   }

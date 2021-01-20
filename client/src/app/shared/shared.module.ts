@@ -14,7 +14,13 @@ import { StepperComponent } from './components/stepper/stepper.component';
 import { BasketSummaryComponent } from './components/basket-summary/basket-summary.component';
 
 @NgModule({
-  declarations: [PagingHeaderComponent, PagerComponent, OrderTotalsComponent, TextInputComponent, StepperComponent, BasketSummaryComponent],
+  declarations: [
+    PagingHeaderComponent,
+    PagerComponent,
+    OrderTotalsComponent,
+    TextInputComponent,
+    StepperComponent,
+    BasketSummaryComponent],
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
