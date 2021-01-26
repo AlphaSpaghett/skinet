@@ -1,8 +1,3 @@
-import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
-import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
-import { ErrorInterceptor } from './core/interceptors/error.interceptor';
-import { HomeModule } from './home/home.module';
-import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -10,14 +5,16 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreModule } from './core/core.module';
+import { HomeModule } from './home/home.module';
+import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { OrdersComponent } from './orders/orders.component';
-
+import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
+import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrdersComponent,
   ],
   imports: [
     BrowserModule,

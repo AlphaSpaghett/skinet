@@ -1,17 +1,16 @@
-import { OrdersRoutingModule } from './orders-routing.module';
-import { OrderTotalsComponent } from './../shared/components/order-totals/order-totals.component';
-import { BasketSummaryComponent } from './../shared/components/basket-summary/basket-summary.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { OrdersComponent } from './orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { OrdersRoutingModule } from './orders-routing.module';
+import { SharedModule } from './../shared/shared.module';
 
 @NgModule({
-  declarations: [OrderDetailedComponent],
+  declarations: [OrdersComponent, OrderDetailedComponent],
   imports: [
     CommonModule,
     OrdersRoutingModule,
-    BasketSummaryComponent,
-    OrderTotalsComponent,
+    SharedModule,
   ]
 })
 export class OrdersModule { }
