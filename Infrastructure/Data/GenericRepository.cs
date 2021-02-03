@@ -61,5 +61,10 @@ namespace Infrastructure.Data
         {
             _context.Set<T>().Remove(entity);
         }
+
+        public Task GetByIdAsync()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
